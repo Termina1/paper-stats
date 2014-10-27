@@ -1,0 +1,22 @@
+{
+  "name": "paper-statistics",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Statistics description for paperpaper.ru",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Termina1/paper-stats.git"
+  },
+  "author": "Termina1",
+  "license": "Private",
+  "bugs": {
+    "url": "https://github.com/Termina1/paper-stats/issues"
+  },
+  "homepage": "https://github.com/Termina1/paper-stats",
+  "dependencies": {
+  }
+}
