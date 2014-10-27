@@ -115,7 +115,7 @@ article:
     -
       params:
         on: 'features'
-      description: 'Клик на последних материалах'
+      description: 'Клик на фичерах'
       selector: '.js-track-article-features'
       method: 'track'
     -
