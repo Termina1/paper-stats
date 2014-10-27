@@ -1,0 +1,141 @@
+header:
+  click:
+    -
+      params:
+        on: 'category'
+        category: :var
+      description: 'Клик по одной из рубрик'
+      selector: '.js-track-category'
+    -
+      params:
+        on: 'hashtag'
+        hashtag: :var
+      description: 'Клик по хэштегу'
+      selector: '.js-track-hashtag'
+    -
+      params:
+        on: 'page link'
+        page: :var
+      description: 'Клик по ссылке на страницы информаций'
+      selector: '.js-track-page-link'
+
+"text widget":
+  click:
+    -
+      params:
+        on: 'title'
+      description: 'Клик на заголовок'
+      selector: '.js-track-text-widget-title'
+    -
+      params:
+        on: 'photo'
+      description: 'Клик на фото'
+      selector: '.js-track-text-widget-photo'
+    -
+      params:
+        on: 'tag'
+        tag: ':var'
+      description: 'Клик на тэг'
+      selector: '.js-track-text-widget-tag'
+
+"read more":
+  click:
+    -
+      description: 'Клик на хочу почитать еще'
+      helper: 'track_read_more'
+      params:
+        on: "read more"
+
+"news widget":
+  click:
+    -
+      description: 'Клик на новость в блоке новостей'
+      params:
+        on: 'link'
+      selector: '.js-track-news-widget-link'
+
+main:
+  click:
+    -
+      description: 'Клик на сюжетах дня'
+      params:
+        on: 'day stories'
+      selector: '.js-track-main-day-stroies'
+      method_type: 'track_link_parent'
+
+    -
+      description: 'Клик на главных материалах'
+      params:
+        on: 'main texts'
+      selector: '.js-track-main-main'
+      method_type: 'track_link_parent'
+    -
+      description: 'Клик на визуальный фичер'
+      params:
+        on: 'visual feature'
+      selector: '.js-track-main-visual'
+      method_type: 'track_link_parent'
+
+
+footer:
+  click:
+    -
+      params:
+        on: 'page link'
+        page: :var
+      description: 'Клик на инфо-ссылках'
+      selector: '.js-track-footer-links'
+
+"news page":
+  click:
+    -
+      params:
+        on: 'other news'
+      description: 'Клик на блоке «Другие новости»'
+      selector: '.js-track-news-page-other-news'
+    -
+      params:
+        on: 'all news'
+      description: 'Клик на «Главные новости»'
+      selector: '.js-track-news-page-all-news'
+
+article:
+  click:
+    -
+      params:
+        on: 'main tag'
+      description: 'Клик на тэге'
+      selector: '.js-track-article-main-tag'
+    -
+      params:
+        on: 'last texts'
+      description: 'Клик на последних материалах'
+      selector: '.js-track-article-last-texts'
+      method: 'track'
+    -
+      params:
+        on: 'features'
+      description: 'Клик на последних материалах'
+      selector: '.js-track-article-features'
+      method: 'track'
+    -
+      params:
+        on: 'recents'
+      description: 'Клик на блоке «Недавно»'
+      selector: '.js-track-article-recents'
+
+    -
+      params:
+        on: 'suggest'
+      description: 'Клик на «Читайте также»'
+      selector: '.js-track-article-suggest'
+    -
+      params:
+        on: 'small suggest'
+      description: 'Клик на мини-контекст'
+      selector: '.js-track-article-small-context'
+    -
+      params:
+        on: 'inner links'
+      description: 'Клик на ссылки внутри текста'
+      selector: '.js-article-text a'
