@@ -38,6 +38,28 @@ header:
       description: 'Клик на тэг'
       selector: '.js-track-text-widget-tag'
 
+"paper test":
+  started:
+    description: "Начало теста"
+    helper: "track_test_start"
+    params:
+      test: :var
+    
+  ended:
+    description: "Конец теста"
+    helper: "track_test_end"
+    params: 
+      test: :var
+      correct: :var
+    
+  answer:
+    description: "Ответ на вопрос теста"
+    helper: "track_test_answer"
+    params: 
+      test: :var
+      answer: :var
+      correct: :var
+
 "read more":
   click:
     -
