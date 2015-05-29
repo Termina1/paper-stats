@@ -39,26 +39,30 @@ header:
       selector: '.js-track-text-widget-tag'
 
 "paper test":
-  started:
-    description: "Начало теста"
-    helper: "track_test_start"
-    params:
-      test: :var
-    
-  ended:
-    description: "Конец теста"
-    helper: "track_test_end"
-    params: 
-      test: :var
-      correct: :var
-    
+  test:
+    -
+      description: "Начало теста"
+      helper: "track_test_start"
+      params:
+        test: :var
+        action: "started"
+    -
+      description: "Конец теста"
+      helper: "track_test_end"
+      params:
+        test: :var
+        correct: :var
+        action: "ended"
+
   answer:
-    description: "Ответ на вопрос теста"
-    helper: "track_test_answer"
-    params: 
-      test: :var
-      answer: :var
-      correct: :var
+    -
+      description: "Ответ на вопрос теста"
+      helper: "track_test_answer"
+      params:
+        test: :var
+        question: :var
+        answer: :var
+        correct: :var
 
 "read more":
   click:
