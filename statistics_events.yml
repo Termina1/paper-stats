@@ -38,6 +38,34 @@ header:
       description: 'Клик на тэг'
       selector: '.js-track-text-widget-tag'
 
+"social popup":
+  subscribe:
+    -
+      description: "User likes public facebook page via likebox"
+      params:
+        on: "fb"
+      helper: "track_user_subscribe_fb"
+    -
+      description: "User likes public vk page via likebox"
+      params:
+        on: "vk"
+      helper: "track_user_subscribe_vk"
+
+  view:
+    -
+      description: "User saw social popup"
+      helper: "track_user_view_popup"
+      params:
+        what: "popup"
+
+  click:
+    -
+      description: "User closed popup"
+      helper: "track_user_closed_popup"
+      params:
+        on: "close"
+
+
 "paper test":
   test:
     -
