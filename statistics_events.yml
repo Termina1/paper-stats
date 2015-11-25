@@ -193,3 +193,16 @@ article:
         on: 'inner links'
       description: 'Клик на ссылки внутри текста'
       selector: '.js-article-text a'
+
+social_like:
+  click:
+    -
+      params:
+        on: 'like'
+      description: 'Клик на лайки перед текстом'
+      selector: '.js-track-before-likes'
+    -
+      params:
+        on: 'like'
+      description: 'Клик на лайки после текста'
+      selector: '.js-track-after-likes'
