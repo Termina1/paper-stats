@@ -65,6 +65,33 @@ header:
       params:
         on: "close"
 
+
+"paper test":
+  test:
+    -
+      description: "Начало теста"
+      helper: "track_test_start"
+      params:
+        test: :var
+        action: "started"
+    -
+      description: "Конец теста"
+      helper: "track_test_end"
+      params:
+        test: :var
+        correct: :var
+        action: "ended"
+
+  answer:
+    -
+      description: "Ответ на вопрос теста"
+      helper: "track_test_answer"
+      params:
+        test: :var
+        question: :var
+        answer: :var
+        correct: :var
+
 "read more":
   click:
     -
